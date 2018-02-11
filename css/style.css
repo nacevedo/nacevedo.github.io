@@ -1,0 +1,65 @@
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+#intro {
+	background-image: url("../img/profile.jpg"); 
+	background-repeat: no-repeat;
+	height: 600px;
+	background-size: cover; 
+	background-position: right center; 
+	
+}
+
+#about {
+	
+	background-color: #154360; 
+}
+
+#skills {
+	
+	background-color: #154360; 
+}
+
+#hobbies {
+	 
+	background-color: #154360; 
+}
+
+#contact {
+	
+	background-color: #154360; 
+}
+
+h1 {
+	font-size: 300%; 
+	color:black; 
+	align-content: center;
+	font-family: 'Varela Round', sans-serif;
+
+	text-align: center;
+}
+
+
+
+p {
+	font-size: 80%; 
+	color:#CDCDCD;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+}
+
+h3 {
+	text-align: center; 
+}
+
+
+
+
