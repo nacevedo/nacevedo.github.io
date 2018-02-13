@@ -1,9 +1,14 @@
+
+body {
+	font-size: 16px;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .container-fluid {
 	padding: 0;
 	margin: 0;
 }
-
-
 
 #intro {
 	background-image: url("../img/profile.png"); 
@@ -14,51 +19,103 @@
 	
 }
 
-#about {
+#about, #hobbies {
 	
-	background-color: #154360; 
+	background-color: #072A52; 
+	padding-bottom: 30px;
 }
 
-#skills {
+#skills, #contact {
 	
-	background-color: #154360; 
-}
-
-#hobbies {
-	 
-	background-color: #154360; 
-}
-
-#contact {
-	
-	background-color: #154360; 
+	background-color: #051D38; 
+	padding-bottom: 30px;
 }
 
 h1 {
 	font-size: 300%; 
 	color:black; 
 	align-content: center;
-	font-family: 'Varela Round', sans-serif;
-
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 	text-align: center;
 }
 
-
-
 p {
-	font-size: 80%; 
+	font-size: 90%; 
 	color:#CDCDCD;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+h3, h4, h5{
+	color: #fff;
 }
 
 h2 {
-  position: relative;
-  text-align: center;
-  font-family: 'Kalam', cursive;
+	position: relative;
+	text-align: center;
+	font-family: 'Crete Round', serif;
+	font-weight: lighter;
 }
 
 h3 {
 	text-align: center; 
+	font-size: 200%;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 2px #cccccc;
 }
+
+h4 {
+	text-align: center; 
+	font-size: 150%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h5 {
+	text-align: center; 
+	font-size: 120%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#laLista{
+	color: #fff;
+	text-align: center;
+}
+
+#biografia{
+	vertical-align: middle;
+	font-size: 1.2em;
+	padding-top: 20px;
+}
+
+#School img, #IB img, #computer img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 15%;
+}
+
+#places hr{
+	color: #fff;
+	size: 60%;
+	font-weight: bold;
+}
+
+#tennis img, #carru, #leer img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+
+
 
 
 

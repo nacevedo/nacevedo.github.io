@@ -9,13 +9,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!--Google fonts --> 
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-
-	<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Audiowide">
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<title>Nicolás Acevedo Sandoval</title>
 </head>
@@ -60,39 +59,44 @@
 		<section id="about">
 			<h3> About me </h3>
 			<div class="row">
-				<div class = "col-sm-6">
+				<div id="biografia" class = "col-sm-6">
 					<p> Hi!. I live in Bogotá, Colombia. I'm currently studying 2 majors. </p>
 					<p>I'm interested in data management and enterprise arquitecture! </p>
 					<p>I enjoy learning new things and involing myself in challenges. </p>
 				</div>
 				
-				<div class = "col-sm-6">
+				<div id="places" class = "col-sm-6">
 					<h4> Studies </h4>
 					
-					<div class="School"> 
+					<div id="School"> 
 						<h5> The English School </h5>
-						<div class="row">
-							<img class="col-xs-6" src="https://www.roundsquare.org/media/3579/colegio-de-inglaterra-the-english-school-bogot%C3%A1-colombia.jpg" height="5%" width="10%">
-							<p class="col-xs-6"> School studies </p>
-						</div>
-					</div>
-					<div class="IB"> 
-						<h5> IB</h5>
-						<div class="row">
-							<img class="col-xs-6" src="http://www.ibo.org/globalassets/digital-tookit/logos-and-programme-models/ib-world-school-logo-2-colour.png" height="5%" width="10%">
-							<p class="col-xs-6"> With emphasis in maths, physics & chemistry</p>
-						</div>
-					</div>
-					<div class="computer">
-						<h5> Universidad de los Andes (Currently)</h5>
-						<div class="row">
-							<img class="col-xs-6" src="https://uniandes.edu.co/sites/default/files/logo-uniandes.png" height="5%" width="10%">
-							<ul class="col-xs-6"> 
-								<li>Computer & Systems Engineer</li>
-								<li>Industrial Engeneer</li>
-							</ul>
-						</div>
+						
+					<!--	<img  src="http://ingeniuscolombia.com/images/COLEGIO-INGLATERRA-ENGLISH-SCHOOL-Ingenius-clases-personalizadas-particulares-domicilio-Bogota-3114535802-matematicas-calculo-quimica-fisica-biologia-profesores-tutores.PNG" >
+					-->		
+					<p > School studies </p>
 
+
+
+				</div>
+				<hr>
+				<div id="IB"> 
+					<h5> International Baccalaureate</h5>
+
+					<!--
+						<img src="http://www.ibo.org/globalassets/digital-tookit/logos-and-programme-models/ib-world-school-logo-2-colour.png" >
+					-->
+					<p > With emphasis in maths, physics & chemistry</p>
+
+				</div>
+				<hr>
+				<div id="computer">
+					<h5> Universidad de los Andes (Currently)</h5>
+
+						<!-- <img class="col-xs-6" src="https://investigaciones.uniandes.edu.co/wp-content/themes/vicerrectoria001/images/logo2.png" >
+						-->
+						<p>Computer & Systems Engineer</p>
+						<p>Industrial Engeneer</p>
+						
 					</div>
 				</div>
 			</div>
@@ -128,11 +132,11 @@
 			<h3> Hobbies </h3>
 			
 			<div class="row">
-				<div class="col-md-4">
+				<div id="tennis" class="col-md-4">
 					<h4>Tennis</h4>
 					<img src="./img/IMG_10.png" height="400px">
 				</div>
-				<div class="col-md-4">
+				<div id="carru" class="col-md-4">
 					<h4>Travelling</h4>
 					<!-- Carousel based on boostrap example-->
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -182,7 +186,7 @@
 
 
 				</div>
-				<div class="col-md-4">
+				<div id="leer" class="col-md-4">
 					<h4>Reading</h4>
 					<img src="https://static4planetadelibroscom.cdnstatics.com/usuaris/libros/fotos/255/original/portada_origen_dan-brown_201706271532.jpg" height="400px">
 				</div>
@@ -195,15 +199,16 @@
 			<h3> Contact</h3>
 			<div class="row">
 				<div class="col-md-4">
-					<h4>Github</h4>
+					<h4> <span class="fa">&#xf092;</span> Github</h4>
 					<!--icono-->
 				</div>
 				<div class="col-md-4">
-					<h4>Facebook</h4>
+					
+					<h4><span class="fa">&#xf082;</span> Facebook</h4>
 					<!--icono-->
 				</div>
 				<div class="col-md-4">
-					<h4>Mail</h4>
+					<h4><i class="fa fa-envelope" aria-hidden="true"></i> Mail</h4>
 					<!--icono-->
 				</div>
 			</div>
@@ -218,5 +223,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="./js/jquery.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
