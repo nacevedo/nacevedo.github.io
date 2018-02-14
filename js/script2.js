@@ -11,22 +11,16 @@ $('#name').hide().fadeIn(5000);
 
 $('#abajoname').hide().fadeIn(10000)
 
+/**
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
+**/
 
-
-
-
-$('.skills-button').on('click', function() {
+$('.skills').on('click', function() {
 		$('.skills').toggle();
 	});
-
-
-$( document ).click(function() {
-  $( "#toggle" ).toggle( "explode" );
-});
-
-
-$('.tweets-button').on('click', function() {
-		$('.tweets').toggle();
-	});
-	
-

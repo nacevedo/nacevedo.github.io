@@ -4,6 +4,8 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nicolás Acevedo Sandoval">
+	<meta name="description" content="First proyect for WEBDEV at Universidad de los Andes">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,12 +18,16 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<title>Nicolás Acevedo Sandoval</title>
+	<link rel="icon" href="img/rocket.png">
+
+	<title >Nicolás Acevedo Sandoval</title>
+
 </head>
 
 
 <body id="top">
 
+<!-- This is the navigation bar for the web page usng bootstrap-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#">Nicolás Acevedo</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,21 +52,25 @@
 		</div>
 	</nav>
 
+<!-- This is the home part of the page, it has the main heading and a background personal image-->
 	<div class="container-fluid">
 		<section class="" id="intro">
 			<br/>
 			<br/>
 			<br/>
-			<h1> Nicolás Acevedo </h1>
-			<h2><img src="img/substract.png" alt="line" width = "5%" height="2%">Personal Web Page<img src="img/substract.png" alt="line" width = "5%" height="2%"></h2>
+			<h1 id="name"> Nicolás Acevedo </h1>
+			<h2 id="abajoname"><img src="img/substract.png" class="decor"  alt="line" >Personal Web Page<img  src="img/substract.png" class="decor" alt="line" ></h2>
 
 		</section>
+
+		<!-- Section with personal information -->
 
 		<section id="about">
 			<h3> About me </h3>
 			<div class="row">
 				<div id="biografia" class = "col-sm-6">
-					<p> Hi!. I live in Bogotá, Colombia. I'm currently studying 2 majors. </p>
+					<p> Hi!. I live in Bogotá, Colombia.  </p>
+					<p>I'm currently studying 2 majors.</p>
 					<p>I'm interested in data management and enterprise arquitecture! </p>
 					<p>I enjoy learning new things and involing myself in challenges. </p>
 				</div>
@@ -74,8 +84,6 @@
 					<!--	<img  src="http://ingeniuscolombia.com/images/COLEGIO-INGLATERRA-ENGLISH-SCHOOL-Ingenius-clases-personalizadas-particulares-domicilio-Bogota-3114535802-matematicas-calculo-quimica-fisica-biologia-profesores-tutores.PNG" >
 					-->		
 					<p > School studies </p>
-
-
 
 				</div>
 				<hr>
@@ -95,46 +103,57 @@
 						<!-- <img class="col-xs-6" src="https://investigaciones.uniandes.edu.co/wp-content/themes/vicerrectoria001/images/logo2.png" >
 						-->
 						<p>Computer & Systems Engineer</p>
-						<p>Industrial Engeneer</p>
+						<p>Industrial Engineer</p>
 						
 					</div>
 				</div>
 			</div>
 
 		</section>
+		<!-- Section with skills -->
 
 		<section class="" id="skills">
 			<h3> Skills </h3>
 			<div class="row">
-				<div class="col-md-3">
-					<h4>Skill 1</h4>
+				<div class="col-md-4 skills-button">
+					<img src="./img/code.png" class="imgSkill" alt="Code image">
+					
+					<ul class="skills" style="display:none">
+						<li>JAVA</li>
+						<li>SQL</li>
+						<li>R</li>
+					</ul>
 					<!--icono-->
 				</div>
-				<div class="col-md-3">
-					<h4>Skill 2</h4>
+				<div class="col-md-4 skills-button">
+					<img src="./img/brain.png"  class="imgSkill" alt="Brain image">
+					<ul class="skills" style="display:none">
+						<li>Critical thinking</li>
+						<li>Problem solving</li>
+					</ul>
 					<!--icono-->
 				</div>
-				<div class="col-md-3">
-					<h4>Skill 3</h4>
-					<!--icono-->
-				</div>
-				<div class="col-md-3">
-					<h4>Skill 4</h4>
+				<div class="col-md-4 skills-button">
+					<img src="./img/group.png"  class="imgSkill" alt="Group image">
+					<ul class="skills" style="display:none">
+						<li>Teamwork</li>
+					</ul>
 					<!--icono-->
 				</div>
 			</div>
 			
+			<p> Click to discover! </p>
 
 		</section>
 
-
+<!-- Section with hobbies -->
 		<section class="" id="hobbies">
 			<h3> Hobbies </h3>
 			
 			<div class="row">
 				<div id="tennis" class="col-md-4">
 					<h4>Tennis</h4>
-					<img src="./img/IMG_10.png" height="400px">
+					<img id="tennispic" src="./img/IMG_10.png" alt="This is a tennis pic">
 				</div>
 				<div id="carru" class="col-md-4">
 					<h4>Travelling</h4>
@@ -151,79 +170,85 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="./img/IMG_2.png" alt="First slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_2.png" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_1.png" alt="Second slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_1.png" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_3.png" alt="Third slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_3.png" alt="Third slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_4.png" alt="Fourth slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_4.png" alt="Fourth slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_5.png" alt="Fith slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_5.png" alt="Fith slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_6.png" alt="Sixth slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_6.png" alt="Sixth slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="./img/IMG_7.png" alt="Seventh slide" height="400px">
+								<img class="d-block w-100 imgCarru" src="./img/IMG_7.png" alt="Seventh slide">
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+						
 					</div>
 
 					<!--end-->
 
-
 				</div>
 				<div id="leer" class="col-md-4">
 					<h4>Reading</h4>
-					<img src="https://static4planetadelibroscom.cdnstatics.com/usuaris/libros/fotos/255/original/portada_origen_dan-brown_201706271532.jpg" height="400px">
+					<img id="bookpic" src="https://static4planetadelibroscom.cdnstatics.com/usuaris/libros/fotos/255/original/portada_origen_dan-brown_201706271532.jpg" alt="This is a book pic">
 				</div>
 			</div>
 			
 
 		</section>
-
+<!-- Section with contact -->
 		<section class="" id="contact">
 			<h3> Contact</h3>
 			<div class="row">
 				<div class="col-md-4">
-					<h4> <span class="fa">&#xf092;</span> Github</h4>
-					<!--icono-->
+					<h4 ><a href = "https://github.com/nacevedo" style="color:#fff" target="_blank"> <span class="fa">&#xf092;</span> Github</a></h4>
+				
 				</div>
 				<div class="col-md-4">
 					
-					<h4><span class="fa">&#xf082;</span> Facebook</h4>
-					<!--icono-->
+					<h4><a href = "https://www.facebook.com/nicolas.acevedo.11" style="color:#fff" target="_blank"> <span class="fa">&#xf082;</span> Facebook</a></h4>
+				
 				</div>
 				<div class="col-md-4">
-					<h4><i class="fa fa-envelope" aria-hidden="true"></i> Mail</h4>
-					<!--icono-->
+					<h4><a href="mailto:n.acevedos@uniandes.edu.co?Subject=Hi!" style="color:#fff" ><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a></h4>
+					s
 				</div>
 			</div>
+			<div class="tweets-button">
+				<h4>Twitter</h4>	
+				<!-- Code for showing my tweets -->			
+				<div class="tweets" style="display:none">
+					<a class="tw twitter-timeline"  href="https://twitter.com/n_acevedo11?ref_src=twsrc%5Etfw" >Tweets by n_acevedo11</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
 
+				<p> Click to discover! </p>
+
+			</div>
 		</section>
 
 
 	</div>
+
+
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="./js/jquery.js"></script>
-<script src="./js/script.js"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
 </body>
+
+
+
 </html>
